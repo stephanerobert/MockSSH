@@ -40,7 +40,7 @@ class command_passwd(MockSSH.SSHCommand):
             self.exit()
 
     def lineReceived(self, line):
-        print 'INPUT (passwd):', line
+        print('INPUT (passwd):', line)
         self.passwords.append(line.strip())
         self.callbacks.pop(0)()
 
@@ -62,5 +62,5 @@ if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print "User interrupted"
+        print("User interrupted")
         sys.exit(1)

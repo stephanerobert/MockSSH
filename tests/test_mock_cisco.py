@@ -31,7 +31,7 @@ class MockCiscoTestCase(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        print "tearDownClass"
+        print("tearDownClass")
         MockSSH.stopThreadedServer()
 
     def test_wr_success(self):  # also tested by test_password_reset_success

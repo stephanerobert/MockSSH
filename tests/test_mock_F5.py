@@ -32,7 +32,7 @@ class MockF5TestCase(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        print "tearDownClass"
+        print("tearDownClass")
         #MockSSH.stopThreadedServer()
 
     def test_passwd_success(self):
